@@ -1,8 +1,10 @@
 <div class="search-container">
     <div class="container">
-        <form action="" class="search-form">
-            <input type="search" class="search-input" name="search">
-            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
-        </form>
+        {% if is_detail_page is not True %}
+            <form action="" class="search-form">
+                <input type="search" class="search-input" name="search">
+                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+            </form>
+        {% endif %}
     </div>
 </div>
